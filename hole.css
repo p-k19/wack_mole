@@ -1,3 +1,4 @@
+
 *{
     margin: 0;
     padding: 0;
@@ -13,6 +14,9 @@ html {
     font-size: 25px;
     /*background: #4810ca;*/
     font-family: sans-serif;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    
 }
 
 body {
@@ -21,6 +25,8 @@ body {
     font-family: sans-serif;
     font-size: 25px;
     text-align: center;
+    background-attachment: fixed;
+    background-size: 100% 100%;
 }
 
 h1 {
@@ -40,6 +46,7 @@ h1 {
 }
 
 .game {
+    overflow-x:hidden;
     width: 600px;
     height: 400px;
     display:flex;
@@ -56,7 +63,7 @@ h1 {
 
 .hole:after{
     display:block;
-    background: url(dirt.png) bottom center no-repeat;
+    background: url(dirt1.png) bottom center no-repeat;
     background-size:contain;
     content: '';
     width: 100%;
@@ -67,7 +74,7 @@ h1 {
 }
 
 .mole {
-    background: url('mole.gif') bottom center no-repeat;
+    background: url('mole1.gif') bottom center no-repeat;
     background-size: 80%;
     position: absolute;
     top: 100%;
@@ -114,7 +121,7 @@ button{
 @media (max-width: 667px){
 
     .game {
-        width:100%;
+        width:90%;
         height: 300px;
         display:flex;
         flex-wrap:wrap;
@@ -142,7 +149,7 @@ button{
 
     .hole:after{
         display:block;
-        background: url(dirt.png) bottom center no-repeat;
+        background: url(dirt1.png) bottom center no-repeat;
         background-size:contain;
         content: '';
         max-width: 70%;
@@ -153,7 +160,7 @@ button{
     }
 
     .mole {
-        background: url('mole.gif') bottom center no-repeat;
+        background: url('mole1.gif') bottom center no-repeat;
         background-size: 60%;
         position: absolute;
         top: 100%;
