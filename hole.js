@@ -96,6 +96,7 @@ function reset() {
     t = 30
     result = 0
     randomTime(0,0);
+     location.reload();
 }
 
 
